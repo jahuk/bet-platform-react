@@ -1,10 +1,10 @@
-## Bet Platform AngularJS
+## Bet Platform React
 
 A simple app to track bet results for UEFA EURO 2016. 
 
 ## Motivation
 
-Learn AngularJS, track bet results and have fun. 
+Learn React, track bet results and have fun. 
 
 ## How it works?
 
