@@ -1,0 +1,274 @@
+/* CORE */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+    display: none !important;
+}
+
+ng\:form {
+    display: block;
+}
+
+/* The styles below ensure that the CSS transition will ALWAYS
+ * animate and close. A nasty bug occurs with CSS transitions where
+ * when the active class isn't set, or if the active class doesn't
+ * contain any styles to transition to, then, if ngAnimate is used,
+ * it will appear as if the webpage is broken due to the forever hanging
+ * animations. The border-spacing (!ie) and zoom (ie) CSS properties are
+ * used below since they trigger a transition without making the browser
+ * animate anything and they're both highly underused CSS properties */
+.ng-animate-start {
+    border-spacing: 1px 1px;
+    -ms-zoom: 1.0001;
+}
+
+.ng-animate-active {
+    border-spacing: 0px 0px;
+    -ms-zoom: 1;
+}
+
+/* CORE END */
+
+@keyframes bg-color {
+    0% {
+        background-color: #ccccff;
+    }
+    20% {
+        background-color: #ccccff;
+    }
+    40% {
+        background-color: #ccccff;
+    }
+    60% {
+        background-color: #ccccff;
+    }
+    80% {
+        background-color: #e6e6ff;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+.logo {
+    height: 20px
+}
+
+.t1 {
+
+}
+
+.t1g {
+    text-align: right;
+}
+
+.t2 {
+    text-align: right;
+}
+
+.t2g {
+
+}
+
+.results tbody tr {
+    cursor: pointer;
+}
+
+.results tbody tr:hover {
+    background: #e6e6ff;
+    transition: background-color, color, 300ms linear;
+}
+
+.results td:nth-child(1),
+.results td:nth-child(2) {
+    text-align: right;
+}
+
+.results td:nth-child(3) {
+    text-align: center;
+}
+
+.results td:nth-child(2),
+.results td:nth-child(4) {
+    font-weight: bold;
+}
+
+.results tr.live {
+    background-color: #ccccff;
+    animation: bg-color 3s infinite;
+    color: red;
+}
+
+.details tr.live {
+    background-color: #ccccff;
+    animation: bg-color 3s infinite;
+    color: red;
+}
+
+.users tbody tr {
+    cursor: pointer;
+}
+
+.users tbody tr:nth-child(1) {
+    background: #8080ff;
+    color: #fff;
+}
+
+.users tbody tr:nth-child(2) {
+    background: #b3b3ff;
+    color: #fff;
+}
+
+.users tbody tr:nth-child(3) {
+    background: #e6e6ff;
+}
+
+.users tbody tr:hover {
+    background: #e6e6ff;
+    transition: background-color, color, 300ms linear;
+}
+
+.users tbody .user {
+    display: block;
+    text-decoration: none;
+    color: #555;
+}
+
+.users tbody tr:nth-child(1) .user,
+.users tbody tr:nth-child(2) .user {
+    color: #fff;
+}
+
+.alert {
+    font-size: 15px;
+    text-align: center;
+}
+
+.badge {
+    background: red;
+}
+
+.loader-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b3b3ff;
+    z-index: 100;
+    opacity: 1;
+}
+
+.loader-overlay.show {
+    display: block;
+}
+
+.loader {
+    margin-top: 200px;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+.img-container {
+    text-align: center;
+}
+
+img {
+    margin: 10px auto 15px;
+}
+
+select {
+    width: 45%;
+}
+
+button {
+    width: 45%;
+    float: right;
+}
+
+.details {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.details.active {
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.back-to-dashboard {
+    width: 25%;
+    min-width: 150px;
+    float: left;
+}
+
+.user-points {
+    width: 100%;
+    float: none !important;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.user-points a {
+    cursor: default;
+}

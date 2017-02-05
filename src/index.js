@@ -1,1 +1,10 @@
-// Set up your application entry point here...
+import React from 'react';
+import {render} from 'react-dom';
+
+import App from './components/app/App';
+import './scss/styles.scss';
+
+render(
+  <App />,
+  document.getElementById('app')
+);
