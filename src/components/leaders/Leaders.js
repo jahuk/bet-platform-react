@@ -7,7 +7,7 @@ const Leaders = () => {
       <table className="table users">
         <thead>
         <tr>
-          <th></th>
+          <th/>
           <th>Name</th>
           <th>Points</th>
         </tr>

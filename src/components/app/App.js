@@ -1,15 +1,32 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 import Leaders from './../leaders/Leaders';
 import Scores from '../scores/Scores';
+import * as AppActions from '../../actions/app.actions';
 
-const App = () => {
-  return (
-    <div>
-      <Leaders />
-      <Scores />
-    </div>
-  );
+class App extends React.Component {
+
+  componentDidMount() {
+    this.props.getResults();
+  }
+
+  render() {
+    return (
+      <div>
+        <Leaders />
+        <Scores />
+      </div>
+    );
+  }
+}
+
+App.propTypes = {
+  getResults: React.PropTypes.func
 };
 
-export default App;
+const mapDispatchToProps = {
+  getResults: AppActions.getResults
+};
+
+export default connect(null, mapDispatchToProps)(App);
