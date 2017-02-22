@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import Leaders from './../leaders/Leaders';
-import Scores from '../scores/Scores';
+import Results from '../results/Results';
 import * as AppActions from '../../actions/app.actions';
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Leaders />
-        <Scores />
+        <Results />
       </div>
     );
   }

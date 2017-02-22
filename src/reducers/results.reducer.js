@@ -1,4 +1,4 @@
-import * as ScoresActions from '../actions/scores.actions';
+import * as ScoresActions from '../actions/results.actions';
 
 const defaultState = {
   results: []
@@ -8,7 +8,6 @@ export default (state = defaultState, action) => {
 
   switch (action.type) {
     case ScoresActions.RESULTS_FETCHED:
-
       return {
         ...state,
         results: action.json.fixtures

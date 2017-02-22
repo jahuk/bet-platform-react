@@ -1,7 +1,7 @@
 // Set up your root reducer here...
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 
-import scores from './scores.reducer';
+import scores from './results.reducer';
 
 const rootReducer = combineReducers({
   scores
