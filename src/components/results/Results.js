@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Result from '../result/Result';
+import Result from './result/Result';
 
 const Results = ({results}) => {
   return results.length > 0 ? (
