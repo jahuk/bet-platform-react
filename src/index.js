@@ -5,7 +5,10 @@ import configureStore from './store/configureStore';
 import {Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
 
-import App from './components/app/App';
+import Home from './containers/home/Home';
+import Match from './containers/match/Match';
+import User from './containers/user/User';
+
 import './scss/styles.scss';
 
 const store = configureStore();
@@ -14,10 +17,9 @@ const history = syncHistoryWithStore(browserHistory, store);
 render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App}>
-        <Route path="/match" component={App}/>
-        <Route path="/user" component={App}/>
-      </Route>
+      <Route path="/" component={Home}/>
+      <Route path="match" component={Match}/>
+      <Route path="user" component={User}/>
     </Router>
   </Provider>,
   document.getElementById('app')
