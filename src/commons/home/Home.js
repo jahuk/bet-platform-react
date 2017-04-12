@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+
 import * as AppActions from '../../actions/app.actions';
 import Leaders from './../../components/leaders/Leaders';
 import Results from '../../components/results/Results';

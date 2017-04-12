@@ -1,25 +1,30 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
+
 import Result from './result/Result';
 
 const Results = ({results}) => {
   return results.length > 0 ? (
-      <div>
-        <h2>Results:</h2>
-        <table className="table results">
-          <tbody>
-          {results.map((result, i) =>
-            <Result
-              home={result.homeTeamName}
-              homeGoals={result.result.goalsHomeTeam}
-              away={result.awayTeamName}
-              awayGoals={result.result.goalsAwayTeam}
-              key={i}/>
-          )}
-          </tbody>
-        </table>
-      </div>
-    ) : null;
+    <div>
+      <Link to="/match">aa</Link>
+      <h2>Results:</h2>
+      <table className="table results">
+        <tbody>
+        {results.map((result, i) =>
+          <Result
+            key={i}
+            id={i}
+            home={result.homeTeamName}
+            homeGoals={result.result.goalsHomeTeam}
+            away={result.awayTeamName}
+            awayGoals={result.result.goalsAwayTeam}
+            />
+        )}
+        </tbody>
+      </table>
+    </div>
+  ) : null;
 };
 
 Results.propTypes = {

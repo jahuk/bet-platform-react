@@ -1,18 +1,19 @@
 import React from 'react';
+import {Link} from 'react-router';
 
-const Result = ({home, homeGoals, away, awayGoals}) => {
-  return (
-    <tr>
-      <td>{home}</td>
-      <td>{homeGoals}</td>
-      <td> - </td>
-      <td>{awayGoals}</td>
-      <td>{away}</td>
-    </tr>
-  );
-};
+const Result = ({id, home, homeGoals, away, awayGoals}) => (
+  <tr>
+    <td>{home}</td>
+    <td>{homeGoals}</td>
+    <td> -</td>
+    <td>{awayGoals}</td>
+    <td>{away}</td>
+    <td><Link to={{ pathname: `/match/${id}`}}>go</Link></td>
+  </tr>
+);
 
 Result.propTypes = {
+  id: React.PropTypes.number,
   home: React.PropTypes.string,
   homeGoals: React.PropTypes.number,
   away: React.PropTypes.string,
