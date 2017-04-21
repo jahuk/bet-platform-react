@@ -1,16 +1,32 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import * as AppActions from '../../actions/app.actions';
 
-const Main = ({children}) => (
-  <main>
-    <h1>React Bet App</h1>
-    <section>
-      {children}
-    </section>
-  </main>
-);
+class Main extends React.Component {
+
+  componentDidMount(){
+    this.props.getResults();
+  }
+
+  render() {
+    return (
+      <main>
+        <h1>React Bet App</h1>
+        <section>
+          {this.props.children}
+        </section>
+      </main>
+    );
+  }
+
+}
 
 Main.propTypes = {
   children: React.PropTypes.object
 };
 
-export default Main;
+const mapDispatchToProps = {
+  getResults: AppActions.getResults
+};
+
+export default connect(null, mapDispatchToProps)(Main);

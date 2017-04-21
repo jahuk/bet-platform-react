@@ -8,7 +8,7 @@ const Result = ({id, home, homeGoals, away, awayGoals}) => (
     <td> -</td>
     <td>{awayGoals}</td>
     <td>{away}</td>
-    <td><Link to={{ pathname: `/match/${id}`}}>go</Link></td>
+    <td><Link className="badge" to={{ pathname: `/match/${id}`}}>GO</Link></td>
   </tr>
 );
 

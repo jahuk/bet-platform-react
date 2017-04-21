@@ -1,13 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router';
 
 import Result from './result/Result';
 
 const Results = ({results}) => {
   return results.length > 0 ? (
     <div>
-      <Link to="/match">aa</Link>
       <h2>Results:</h2>
       <table className="table results">
         <tbody>

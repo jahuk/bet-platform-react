@@ -146,7 +146,8 @@ ng\:form {
 }
 
 .badge {
-    background: red;
+  background: red;
+  text-decoration: none !important;
 }
 
 .loader-overlay {
