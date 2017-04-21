@@ -29,7 +29,7 @@ Results.propTypes = {
   results: React.PropTypes.array
 };
 
-const mapStateToProps = ({scores: {results}}) => {
+const mapStateToProps = ({results: {results}}) => {
   return {
     results: results
   };

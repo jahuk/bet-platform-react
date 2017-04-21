@@ -2,10 +2,12 @@
 import {combineReducers} from 'redux';
 import {routerReducer} from 'react-router-redux';
 
-import scores from './results.reducer';
+import results from './results.reducer';
+import bets from './bets.reducer';
 
 const rootReducer = combineReducers({
-  scores,
+  results,
+  bets,
   routing: routerReducer
 });
 

@@ -6,6 +6,7 @@ class Main extends React.Component {
 
   componentDidMount(){
     this.props.getResults();
+    this.props.getBets();
   }
 
   render() {
@@ -26,7 +27,8 @@ Main.propTypes = {
 };
 
 const mapDispatchToProps = {
-  getResults: AppActions.getResults
+  getResults: AppActions.getResults,
+  getBets: AppActions.getBets
 };
 
 export default connect(null, mapDispatchToProps)(Main);

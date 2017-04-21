@@ -1,1 +1,0 @@
-export const RESULTS_FETCHED = 'RESULTS_FETCH_DONE';
