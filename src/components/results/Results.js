@@ -17,7 +17,7 @@ const Results = ({results}) => {
             homeGoals={result.result.goalsHomeTeam}
             away={result.awayTeamName}
             awayGoals={result.result.goalsAwayTeam}
-            />
+          />
         )}
         </tbody>
       </table>
@@ -29,10 +29,8 @@ Results.propTypes = {
   results: React.PropTypes.array
 };
 
-const mapStateToProps = ({results: {results}}) => {
-  return {
-    results: results
-  };
+const mapStateToProps = ({results}) => {
+  return {results};
 };
 
 export default connect(mapStateToProps)(Results);

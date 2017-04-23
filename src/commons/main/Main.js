@@ -23,6 +23,8 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
+  getResults: React.PropTypes.func,
+  getBets: React.PropTypes.func,
   children: React.PropTypes.object
 };
 

@@ -1,20 +1,15 @@
 import * as AppActions from '../actions/app.actions';
 
-const defaultState = {
-  bets: []
-};
+const defaultState = [];
 
 export default (state = defaultState, action) => {
 
   switch (action.type) {
     case AppActions.BETS_FETCH_DONE:
-      return {
+      return [
         ...state,
-        bets: [
-          ...state.bets,
-          action.json
-        ]
-      };
+        action.json
+      ];
 
     default:
       return state;
