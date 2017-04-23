@@ -26,11 +26,12 @@ export function getResults() {
 
 export function getBets() {
   return (dispatch) => {
-    dispatch({type: BETS_FETCH_REQUESTED});
-
-    fetch(`${BETS.URLS.LOCATION}${BETS.URLS.USERS[0]}.json`, BETS.SETTINGS)
-      .then((response) => response.json())
-      .then((json) => dispatch({type: BETS_FETCH_DONE, json}))
-      .catch((error) => dispatch({type: BETS_FETCH_FAILED, error}));
+    for (let user of BETS.URLS.USERS) {
+      dispatch({type: BETS_FETCH_REQUESTED});
+      fetch(`${BETS.URLS.LOCATION}${user}.json`, BETS.SETTINGS)
+        .then((response) => response.json())
+        .then((json) => dispatch({type: BETS_FETCH_DONE, json}))
+        .catch((error) => dispatch({type: BETS_FETCH_FAILED, error}));
+    }
   };
 }
