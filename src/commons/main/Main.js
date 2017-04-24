@@ -5,8 +5,7 @@ import * as AppActions from '../../actions/app.actions';
 class Main extends React.Component {
 
   componentDidMount(){
-    this.props.getResults();
-    this.props.getBets();
+    this.props.getData();
   }
 
   render() {
@@ -23,14 +22,12 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
-  getResults: React.PropTypes.func,
-  getBets: React.PropTypes.func,
+  getData: React.PropTypes.func,
   children: React.PropTypes.object
 };
 
 const mapDispatchToProps = {
-  getResults: AppActions.getResults,
-  getBets: AppActions.getBets
+  getData: AppActions.getData
 };
 
 export default connect(null, mapDispatchToProps)(Main);

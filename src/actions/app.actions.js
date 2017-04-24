@@ -3,35 +3,42 @@ import BETS from './utils/bets.config';
 
 /* action types */
 
-export const RESULTS_FETCH_REQUESTED = 'RESULTS_FETCH_REQUESTED';
-export const RESULTS_FETCH_DONE = 'RESULTS_FETCH_DONE';
-export const RESULTS_FETCH_FAILED = 'RESULTS_FETCH_FAILED';
-
-export const BETS_FETCH_REQUESTED = 'BETS_FETCH_REQUESTED';
-export const BETS_FETCH_DONE = 'BETS_FETCH_DONE';
-export const BETS_FETCH_FAILED = 'BETS_FETCH_FAILED';
+export const DATA_FETCH_REQUESTED = 'BETS_FETCH_REQUESTED';
+export const DATA_FETCH_DONE = 'BETS_FETCH_DONE';
+export const DATA_FETCH_FAILED = 'BETS_FETCH_FAILED';
 
 /* action creators */
 
-export function getResults() {
+export function getData() {
   return (dispatch) => {
-    dispatch({type: RESULTS_FETCH_REQUESTED});
+    dispatch({type: DATA_FETCH_REQUESTED});
 
-    fetch(RESULTS.URLS.LIVE.FIXTURES, RESULTS.SETTINGS)
-      .then((response) => response.json())
-      .then((json) => dispatch({type: RESULTS_FETCH_DONE, json}))
-      .catch((error) => dispatch({type: RESULTS_FETCH_FAILED, error}));
-  };
-}
+    const data = [];
 
-export function getBets() {
-  return (dispatch) => {
+    const results = fetch(RESULTS.URLS.LIVE.FIXTURES, RESULTS.SETTINGS)
+      .then((response) => response.json());
+    data.push(results);
+
     for (let user of BETS.URLS.USERS) {
-      dispatch({type: BETS_FETCH_REQUESTED});
-      fetch(`${BETS.URLS.LOCATION}${user}.json`, BETS.SETTINGS)
-        .then((response) => response.json())
-        .then((json) => dispatch({type: BETS_FETCH_DONE, json}))
-        .catch((error) => dispatch({type: BETS_FETCH_FAILED, error}));
+      const bet = fetch(`${BETS.URLS.LOCATION}${user}.json`, BETS.SETTINGS)
+        .then((response) => response.json());
+      data.push(bet);
     }
+
+    Promise.all(data)
+      .then((values) => {
+        const results = values.slice(0,1)[0];
+        const bets = values.slice(1);
+
+        dispatch({
+          type: DATA_FETCH_DONE,
+          results,
+          bets
+        });
+      })
+      .catch(error => {
+        dispatch({type: DATA_FETCH_FAILED, error});
+      });
+
   };
 }

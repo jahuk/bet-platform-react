@@ -5,10 +5,10 @@ const defaultState = [];
 export default (state = defaultState, action) => {
 
   switch (action.type) {
-    case AppActions.BETS_FETCH_DONE:
+    case AppActions.DATA_FETCH_DONE:
       return [
         ...state,
-        action.json
+        action.bets
       ];
 
     default:
