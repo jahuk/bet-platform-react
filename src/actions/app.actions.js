@@ -1,5 +1,6 @@
-import RESULTS from './utils/results.config';
-import BETS from './utils/bets.config';
+import RESULTS from './utils/config/results.config';
+import BETS from './utils/config/bets.config';
+import extractResults from './utils/extractResults';
 
 /* action types */
 
@@ -27,7 +28,7 @@ export function getData() {
 
     Promise.all(data)
       .then((values) => {
-        const results = values.slice(0,1)[0];
+        const results = extractResults(values.slice(0, 1));
         const bets = values.slice(1);
 
         dispatch({

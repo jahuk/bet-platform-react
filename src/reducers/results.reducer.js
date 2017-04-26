@@ -5,8 +5,9 @@ const defaultState = [];
 export default (state = defaultState, action) => {
 
   switch (action.type) {
+
     case AppActions.DATA_FETCH_DONE:
-      return action.results.fixtures;
+      return action.results;
 
     default:
       return state;

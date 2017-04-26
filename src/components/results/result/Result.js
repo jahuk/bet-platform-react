@@ -1,23 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const Result = ({id, home, homeGoals, away, awayGoals}) => (
+const Result = ({id, home, away, result}) => (
   <tr>
     <td>{home}</td>
-    <td>{homeGoals}</td>
-    <td> -</td>
-    <td>{awayGoals}</td>
+    <td>{result}</td>
     <td>{away}</td>
-    <td><Link className="badge" to={{ pathname: `/match/${id}`}}>GO</Link></td>
+    <td><Link className="badge" to={{pathname: `/match/${id}`}}>GO</Link></td>
   </tr>
 );
 
 Result.propTypes = {
   id: React.PropTypes.number,
   home: React.PropTypes.string,
-  homeGoals: React.PropTypes.number,
   away: React.PropTypes.string,
-  awayGoals: React.PropTypes.number
+  result: React.PropTypes.string
 };
 
 export default Result;

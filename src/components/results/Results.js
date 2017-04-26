@@ -13,10 +13,9 @@ const Results = ({results}) => {
           <Result
             key={i}
             id={i}
-            home={result.homeTeamName}
-            homeGoals={result.result.goalsHomeTeam}
-            away={result.awayTeamName}
-            awayGoals={result.result.goalsAwayTeam}
+            home={result.home}
+            away={result.away}
+            result={result.result}
           />
         )}
         </tbody>
