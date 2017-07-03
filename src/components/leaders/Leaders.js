@@ -1,6 +1,10 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-const Leaders = () => {
+const Leaders = ({results, bets}) => {
+
+  console.log(results, bets);
+
   return (
     <div>
       <h2>Leaders:</h2>
@@ -39,4 +43,15 @@ const Leaders = () => {
   );
 };
 
-export default Leaders;
+Leaders.propTypes = {
+  results: React.PropTypes.array
+};
+
+const mapStateToProps = ({results, bets}) => {
+  return {
+    results,
+    bets
+  };
+};
+
+export default connect(mapStateToProps)(Leaders);

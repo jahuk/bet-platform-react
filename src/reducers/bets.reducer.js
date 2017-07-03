@@ -6,10 +6,7 @@ export default (state = defaultState, action) => {
 
   switch (action.type) {
     case AppActions.DATA_FETCH_DONE:
-      return [
-        ...state,
-        action.bets
-      ];
+      return action.bets;
 
     default:
       return state;
