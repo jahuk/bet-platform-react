@@ -1,10 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import User from './user/User';
 
-const Leaders = ({results, bets}) => {
-
-  console.log(results, bets);
-
+const Leaders = ({leaders}) => {
   return (
     <div>
       <h2>Leaders:</h2>
@@ -17,26 +15,16 @@ const Leaders = ({results, bets}) => {
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>1</td>
-          <td><a className="user">Jan</a></td>
-          <td><span className="badge">5</span></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><a className="user">Zbigniew</a></td>
-          <td><span className="badge">4</span></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><a className="user">Krzychu</a></td>
-          <td><span className="badge">2</span></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><a className="user">Wiesław</a></td>
-          <td><span className="badge">2</span></td>
-        </tr>
+
+        { leaders.map((user, i) => (
+          <User
+            key={user.id}
+            id={user.id}
+            name={user.name}
+            points={user.points}
+            place={i} />
+        ))}
+
         </tbody>
       </table>
     </div>
@@ -44,14 +32,11 @@ const Leaders = ({results, bets}) => {
 };
 
 Leaders.propTypes = {
-  results: React.PropTypes.array
+  leaders: React.PropTypes.array
 };
 
-const mapStateToProps = ({results, bets}) => {
-  return {
-    results,
-    bets
-  };
+const mapStateToProps = ({leaders}) => {
+  return {leaders};
 };
 
 export default connect(mapStateToProps)(Leaders);

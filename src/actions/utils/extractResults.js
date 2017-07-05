@@ -5,6 +5,7 @@ export default function extractResults(results) {
     extractedResults.push({
       home: result.homeTeamName,
       away: result.awayTeamName,
+      matchday: result.matchday,
       result: `${result.result.goalsHomeTeam}-${result.result.goalsAwayTeam}`
     });
   }
