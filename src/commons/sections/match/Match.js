@@ -1,8 +1,11 @@
 import React from 'react';
+import Back from './../../../components/back/Back';
+import MatchBets from './../../../components/matchBets/MatchBets';
 
 const Match = () => (
   <div>
-    Match
+    <Back/>
+    <MatchBets/>
   </div>
 );
 
