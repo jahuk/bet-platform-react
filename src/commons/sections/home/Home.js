@@ -16,8 +16,6 @@ Home.propTypes = {
   results: React.PropTypes.array,
 };
 
-const mapStateToProps = ({leaders, results}) => {
-  return {leaders, results};
-};
+const mapStateToProps = ({leaders, results}) => ({leaders, results});
 
 export default connect(mapStateToProps)(Home);

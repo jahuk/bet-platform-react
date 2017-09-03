@@ -1,6 +1,6 @@
 export default {
   URLS: {
-    LOCATION: 'data/bets/',
+    LOCATION: 'http://localhost:3000/data/bets/',
     USERS: [
       'michalw',
       'paweln',
