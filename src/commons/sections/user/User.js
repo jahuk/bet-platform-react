@@ -4,7 +4,7 @@ import Back from './../../../components/back/Back';
 import UserBets from './../../../components/userBets/UserBets';
 
 const User = ({leaders, results, location}) => {
-  const userId = location.pathname.split('/').pop();
+  const userId = parseInt(location.pathname.split('/').pop());
   return (
     <div>
       <Back/>

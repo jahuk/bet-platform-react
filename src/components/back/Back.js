@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from 'react-router';
 
 const Back = () => (
-  <div>
-    <Link to={'/'}>Back</Link>
+  <div className="btn btn-default back-to-dashboard">
+    <Link to={'/'}>Back to dashboard</Link>
   </div>
 );
 
