@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const Back = () => (
   <div>
-    Back
+    <Link to={'/'}>Back</Link>
   </div>
 );
 
