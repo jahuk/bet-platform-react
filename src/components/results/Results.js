@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
-
 import Result from './result/Result';
 
 const Results = ({results}) => {
@@ -28,8 +26,4 @@ Results.propTypes = {
   results: React.PropTypes.array
 };
 
-const mapStateToProps = ({results}) => {
-  return {results};
-};
-
-export default connect(mapStateToProps)(Results);
+export default Results;

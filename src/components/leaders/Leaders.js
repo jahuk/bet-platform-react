@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import User from './user/User';
 
 const Leaders = ({leaders}) => {
@@ -35,8 +34,4 @@ Leaders.propTypes = {
   leaders: React.PropTypes.array
 };
 
-const mapStateToProps = ({leaders}) => {
-  return {leaders};
-};
-
-export default connect(mapStateToProps)(Leaders);
+export default Leaders;
