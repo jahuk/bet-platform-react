@@ -9,7 +9,7 @@ const UserBets = ({leaders, results, userId}) => {
   return (
     <div>
       <UserInfo name={name} points={points} />
-      <UserList/>
+      <UserList leaders={leaders} results={results} userId={userId} />
     </div>
   );
 };
