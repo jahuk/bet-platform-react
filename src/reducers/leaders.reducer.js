@@ -1,5 +1,5 @@
 import * as AppActions from '../actions/app.actions';
-import getLeaders from './utils/getLeaders';
+import getLeaders from '../utils/getLeaders';
 
 const defaultState = [];
 

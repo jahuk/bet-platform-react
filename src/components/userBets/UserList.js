@@ -1,8 +1,8 @@
 import React from 'react';
 import User from './user/User';
-import getMatchPoints from '../../reducers/utils/getMatchPoints';
+import getMatchPoints from '../../utils/getMatchPoints';
 
-const UserList = ({leaders, results, bets, userId}) => (
+const UserList = ({results, bets, userId}) => (
   <table className="table results">
     <thead>
     <tr>
@@ -16,20 +16,10 @@ const UserList = ({leaders, results, bets, userId}) => (
     <tbody>
 
     {results.map((result, i) => {
-      const userBets = bets.find((bet) => bet.id === userId).bets[i].bet;
-      const userPoints = getMatchPoints(result.result, userBets, result.matchday);
-
-      return <User
-        key={i}
-        id={i}
-        home={result.home}
-        away={result.away}
-        result={result.result}
-        bet={userBets}
-        points={userPoints}
-      />;
+        const userBets = bets.find((bet) => bet.id === userId).bets[i].bet;
+        const userPoints = getMatchPoints(result.result, userBets, result.matchday);
+        return <User key={i} id={i} home={result.home} away={result.away} result={result.result} bet={userBets} points={userPoints}/>;
       }
-
     )}
 
     </tbody>
@@ -37,7 +27,6 @@ const UserList = ({leaders, results, bets, userId}) => (
 );
 
 UserList.propTypes = {
-  leaders: React.PropTypes.array,
   results: React.PropTypes.array,
   bets: React.PropTypes.array,
   userId: React.PropTypes.number
