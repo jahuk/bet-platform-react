@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router';
 
-const User = ({home, away, result, bet, points}) => (
+const User = ({id, home, away, result, bet, points}) => (
   <tr>
     <td> {home} </td>
     <td> {result} </td>
@@ -8,6 +9,9 @@ const User = ({home, away, result, bet, points}) => (
     <td> {bet} </td>
     <td>
       <span className="badge">{points}</span>
+    </td>
+    <td>
+      <Link className="badge" to={{pathname: `/match/${id}`}}>GO</Link>
     </td>
   </tr>
 );
