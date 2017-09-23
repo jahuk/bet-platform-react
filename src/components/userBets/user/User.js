@@ -1,13 +1,13 @@
 import React from 'react';
 
-const User = ({home, away, result, bet, matchday}) => (
+const User = ({home, away, result, bet, points}) => (
   <tr>
     <td> {home} </td>
     <td> {result} </td>
     <td> {away} </td>
     <td> {bet} </td>
     <td>
-      <span className="badge">3</span>
+      <span className="badge">{points}</span>
     </td>
   </tr>
 );
@@ -18,7 +18,7 @@ User.propTypes = {
   away: React.PropTypes.string,
   result: React.PropTypes.string,
   bet: React.PropTypes.string,
-  matchday: React.PropTypes.number
+  points: React.PropTypes.number
 };
 
 export default User;
