@@ -25,7 +25,7 @@
         }
       },
       "date": "2018-06-14T15:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Russia",
       "awayTeamName": "Saudi Arabia",
@@ -51,7 +51,7 @@
         }
       },
       "date": "2018-06-15T12:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Egypt",
       "awayTeamName": "Uruguay",
@@ -77,7 +77,7 @@
         }
       },
       "date": "2018-06-15T15:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Morocco",
       "awayTeamName": "Iran",
@@ -103,7 +103,7 @@
         }
       },
       "date": "2018-06-15T18:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Portugal",
       "awayTeamName": "Spain",
@@ -129,7 +129,7 @@
         }
       },
       "date": "2018-06-16T10:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "France",
       "awayTeamName": "Australia",
@@ -155,7 +155,7 @@
         }
       },
       "date": "2018-06-16T13:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Argentina",
       "awayTeamName": "Iceland",
@@ -181,7 +181,7 @@
         }
       },
       "date": "2018-06-16T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Peru",
       "awayTeamName": "Denmark",
@@ -207,13 +207,13 @@
         }
       },
       "date": "2018-06-16T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Croatia",
       "awayTeamName": "Nigeria",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -233,13 +233,13 @@
         }
       },
       "date": "2018-06-17T12:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Costa Rica",
       "awayTeamName": "Serbia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -259,13 +259,13 @@
         }
       },
       "date": "2018-06-17T15:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Germany",
       "awayTeamName": "Mexico",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -285,13 +285,13 @@
         }
       },
       "date": "2018-06-17T18:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Brazil",
       "awayTeamName": "Switzerland",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -311,13 +311,13 @@
         }
       },
       "date": "2018-06-18T12:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Sweden",
       "awayTeamName": "Korea Republic",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -337,13 +337,13 @@
         }
       },
       "date": "2018-06-18T15:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "homeTeamName": "Belgium",
       "awayTeamName": "Panama",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -363,13 +363,13 @@
         }
       },
       "date": "2018-06-18T18:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "homeTeamName": "Tunisia",
       "awayTeamName": "England",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
