@@ -7,7 +7,8 @@ export default (state = defaultState, action) => {
   switch (action.type) {
 
     case AppActions.DATA_FETCH_DONE:
-      return action.results;
+      return action.results
+        .filter(match => match.matchday <= 3);
 
     default:
       return state;

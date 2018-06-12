@@ -1,25 +1,24 @@
 export default {
   URLS: {
-    LOCATION: 'http://localhost:3000/data/bets/',
+    LOCATION: 'data/bets/',
     USERS: [
-      'michalw',
-      'paweln',
-      'danielk',
-      'joannai',
-      'tog',
-      'rafalm',
-      'pawelk',
-      'jakubn',
-      'jaceks',
-      'pawela',
-      'darekw',
-      'kasias',
-      'jaceko',
-      'witekd',
-      'agnieszkab',
-      'agnieszkad',
+      'jasiekk',
+      'adamd',
+      'krzysiekk',
+      'michalb',
       'jagnak',
-      'maciejo'
+      'michals',
+      'wojtekk',
+      'darekb',
+      'lukaszb',
+      'mikolajk',
+      'jarekb',
+      'szymonn',
+      'wojtekkuc',
+      'mateuszo',
+      'adamw',
+      'kamilj',
+      'krzysztofg'
     ]
   },
   SETTINGS: {

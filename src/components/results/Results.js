@@ -13,6 +13,7 @@ const Results = ({results}) => {
             id={i}
             home={result.home}
             away={result.away}
+            status={result.status}
             result={result.result}
           />
         )}

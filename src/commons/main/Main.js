@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import * as AppActions from '../../actions/app.actions';
 
 class Main extends React.Component {
@@ -11,7 +12,7 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <h1>React Bet App</h1>
+        <Link to={'/'}><h1 className="logo"><img src="./assets/logo.png" alt="" /></h1></Link>
         <section>
           {this.props.children}
         </section>

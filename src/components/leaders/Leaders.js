@@ -15,13 +15,13 @@ const Leaders = ({leaders}) => {
         </thead>
         <tbody>
 
-        { leaders.map((user, i) => (
+        { leaders.map((user) => (
           <User
             key={user.id}
             id={user.id}
             name={user.name}
             points={user.points}
-            place={++i} />
+            place={user.place} />
         ))}
 
         </tbody>

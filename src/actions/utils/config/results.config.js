@@ -1,11 +1,11 @@
 export default {
   URLS: {
     LIVE: {
-      FIXTURES: 'http://api.football-data.org/v1/soccerseasons/424/fixtures',
+      FIXTURES: 'http://api.football-data.org/v1/competitions/467/fixtures',
       TOKEN: 'd6d13ff9c73843b8ac45326b4d7b88d9'
     },
     MOCK: {
-      FIXTURES: 'data/fixtures/fixtures-final.json',
+      FIXTURES: 'data/fixtures/fixtures-10-06-2018.json',
       TOKEN: ''
     }
   },

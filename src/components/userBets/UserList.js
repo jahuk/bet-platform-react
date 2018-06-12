@@ -15,7 +15,7 @@ const UserList = ({results, bets, userId}) => (
     </thead>
     <tbody>
 
-    {results.map((result, i) => {
+    {results.length > 0 && results.map((result, i) => {
         const userBets = bets.find((bet) => bet.id === userId).bets[i].bet;
         const userPoints = getMatchPoints(result.result, userBets, result.matchday);
         return <User key={i} id={i} home={result.home} away={result.away} result={result.result} bet={userBets} points={userPoints}/>;

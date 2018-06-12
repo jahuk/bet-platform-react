@@ -1,7 +1,9 @@
 import getUserPoints from './getUserPoints';
+import getUserPlace from './getUserPlace';
 
 export default function getLeaders(results, bets) {
   let leaders = [];
+  let sortedLeaders = [];
 
   for (let bet of bets) {
     let user = {
@@ -12,5 +14,7 @@ export default function getLeaders(results, bets) {
     leaders.push(user);
   }
 
-  return leaders.sort((u1, u2) => u2.points - u1.points).slice();
+  sortedLeaders = leaders.sort((u1, u2) => u2.points - u1.points).slice();
+
+  return sortedLeaders.map(user => ({...user, place: getUserPlace(user.points, sortedLeaders.map(user => user.points))}));
 }
