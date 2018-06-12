@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const User = ({id, home, away, result, bet, points}) => (
+const User = ({id, home, away, result, bet, points, isPointsLive}) => (
   <tr>
     <td> {home} </td>
     <td> {result} </td>
@@ -11,6 +11,7 @@ const User = ({id, home, away, result, bet, points}) => (
       <span className="badge">{points}</span>
     </td>
     <td>
+      {isPointsLive && <span className="badge live">LIVE</span>} &nbsp;
       <Link className="badge more" to={{pathname: `/match/${id}`}}>more</Link>
     </td>
   </tr>
@@ -22,7 +23,8 @@ User.propTypes = {
   away: React.PropTypes.string,
   result: React.PropTypes.string,
   bet: React.PropTypes.string,
-  points: React.PropTypes.number
+  points: React.PropTypes.number,
+  isPointsLive: React.PropTypes.bool
 };
 
 export default User;

@@ -7,7 +7,7 @@ export default function extractResults(results) {
       away: result.awayTeamName,
       matchday: result.matchday,
       status: result.status,
-      result: (result.result.goalsHomeTeam) ? `${result.result.goalsHomeTeam}-${result.result.goalsAwayTeam}` : '',
+      result: (result.result.goalsHomeTeam) === null ? '' : `${result.result.goalsHomeTeam}-${result.result.goalsAwayTeam}`
     });
   }
 

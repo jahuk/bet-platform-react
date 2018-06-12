@@ -32,28 +32,15 @@ ng\:form {
 
 @keyframes bg-color {
   0% {
-    background-color: #ccccff;
-  }
-  20% {
-    background-color: #ccccff;
-  }
-  40% {
-    background-color: #ccccff;
-  }
-  60% {
-    background-color: #ccccff;
-  }
-  80% {
-    background-color: #e6e6ff;
+    background-color: red;
+    color: white;
   }
   100% {
-    background-color: #ffffff;
+    background-color: white;
+    color: red;
   }
-}
 
-//.logo {
-//  height: 20px
-//}
+}
 
 .t1 {
 
@@ -105,6 +92,18 @@ ng\:form {
 }
 
 .details tr.live {
+  background-color: #ccccff;
+  animation: bg-color 3s infinite;
+  color: red;
+}
+
+.table.match tr.live {
+  background-color: #ccccff;
+  animation: bg-color 3s infinite;
+  color: red;
+}
+
+.badge.live {
   background-color: #ccccff;
   animation: bg-color 3s infinite;
   color: red;

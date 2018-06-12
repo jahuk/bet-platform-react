@@ -25,12 +25,12 @@
         }
       },
       "date": "2018-06-14T15:00:00Z",
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "matchday": 1,
       "homeTeamName": "Russia",
       "awayTeamName": "Saudi Arabia",
       "result": {
-        "goalsHomeTeam": 1,
+        "goalsHomeTeam": 0,
         "goalsAwayTeam": 0
       },
       "odds": null
@@ -51,12 +51,12 @@
         }
       },
       "date": "2018-06-15T12:00:00Z",
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "matchday": 1,
       "homeTeamName": "Egypt",
       "awayTeamName": "Uruguay",
       "result": {
-        "goalsHomeTeam": 1,
+        "goalsHomeTeam": 0,
         "goalsAwayTeam": 0
       },
       "odds": null
@@ -82,8 +82,8 @@
       "homeTeamName": "Morocco",
       "awayTeamName": "Iran",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -108,8 +108,8 @@
       "homeTeamName": "Portugal",
       "awayTeamName": "Spain",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -134,8 +134,8 @@
       "homeTeamName": "France",
       "awayTeamName": "Australia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -160,8 +160,8 @@
       "homeTeamName": "Argentina",
       "awayTeamName": "Iceland",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -181,13 +181,13 @@
         }
       },
       "date": "2018-06-16T16:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "homeTeamName": "Peru",
       "awayTeamName": "Denmark",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },

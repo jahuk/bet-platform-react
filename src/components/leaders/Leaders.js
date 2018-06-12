@@ -21,6 +21,7 @@ const Leaders = ({leaders}) => {
             id={user.id}
             name={user.name}
             points={user.points}
+            isPointsLive={user.isPointsLive}
             place={user.place} />
         ))}
 

@@ -36,9 +36,10 @@ const MatchList = ({results, bets, matchId}) => {
           const matchResult = results[matchId].result;
           const matchDay = results[matchId].matchday;
           const points = getMatchPoints(matchResult, matchBet, matchDay);
+          const isLive = results[matchId].status === 'IN_PLAY';
 
           return (
-            <User key={i} id={i} name={bet.name} bet={matchBet} points={points} />
+            <User key={i} id={i} name={bet.name} bet={matchBet} points={points} isLive={isLive} />
           );
         }).sort(sortBets)
       }

@@ -2,11 +2,11 @@ import React from 'react';
 import {Link} from 'react-router';
 
 const Result = ({id, home, away, status, result}) => (
-  <tr className={status === 'IN_PLAY' ? 'live' : ''}>
+  <tr>
     <td>{home}</td>
     <td>{result}</td>
     <td>{away}</td>
-    <td><Link className="badge more" to={{pathname: `/match/${id}`}}>more</Link></td>
+    <td>{status === 'IN_PLAY' && <span className="badge live">LIVE</span>} &nbsp; <Link className="badge more" to={{pathname: `/match/${id}`}}>more</Link></td>
   </tr>
 );
 

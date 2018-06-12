@@ -9,7 +9,8 @@ export default function getLeaders(results, bets) {
     let user = {
       id: bet.id,
       name: bet.name,
-      points: getUserPoints(results, bet.bets)
+      points: getUserPoints(results, bet.bets),
+      isPointsLive: results.some(result => result.status === 'IN_PLAY')
     };
     leaders.push(user);
   }
