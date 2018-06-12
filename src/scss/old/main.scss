@@ -95,6 +95,7 @@ ng\:form {
 .results td:nth-child(2),
 .results td:nth-child(4) {
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .results tr.live {
@@ -150,6 +151,12 @@ ng\:form {
 
 .badge {
   background: red;
+  text-decoration: none !important;
+}
+
+.badge.more {
+  background: #eee;
+  color: #8080ff;
   text-decoration: none !important;
 }
 

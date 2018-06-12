@@ -5,7 +5,7 @@ export default {
       TOKEN: 'd6d13ff9c73843b8ac45326b4d7b88d9'
     },
     MOCK: {
-      FIXTURES: 'data/fixtures/fixtures-10-06-2018.json',
+      FIXTURES: 'http://m18.knigawka.com/data/fixtures/fixtures-10-06-2018.json',
       TOKEN: ''
     }
   },

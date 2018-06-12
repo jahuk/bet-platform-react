@@ -1,6 +1,6 @@
 export default {
   URLS: {
-    LOCATION: 'data/bets/',
+    LOCATION: 'http://m18.knigawka.com/data/bets/',
     USERS: [
       'jasiekk',
       'adamd',

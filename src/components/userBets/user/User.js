@@ -11,7 +11,7 @@ const User = ({id, home, away, result, bet, points}) => (
       <span className="badge">{points}</span>
     </td>
     <td>
-      <Link className="badge" to={{pathname: `/match/${id}`}}>GO</Link>
+      <Link className="badge more" to={{pathname: `/match/${id}`}}>more</Link>
     </td>
   </tr>
 );

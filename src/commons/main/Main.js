@@ -12,7 +12,7 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <Link to={'/'}><h1 className="logo"><img src="./assets/logo.png" alt="" /></h1></Link>
+        <Link to={'/'}><h1 className="logo"><img src="http://m18.knigawka.com/assets/logo.png" alt="" /></h1></Link>
         <section>
           {this.props.children}
         </section>

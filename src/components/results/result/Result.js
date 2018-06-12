@@ -6,7 +6,7 @@ const Result = ({id, home, away, status, result}) => (
     <td>{home}</td>
     <td>{result}</td>
     <td>{away}</td>
-    <td><Link className="badge" to={{pathname: `/match/${id}`}}>GO</Link></td>
+    <td><Link className="badge more" to={{pathname: `/match/${id}`}}>more</Link></td>
   </tr>
 );
 

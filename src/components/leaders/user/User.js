@@ -6,7 +6,7 @@ const User = ({id, name, points, place}) => (
     <td>{place}</td>
     <td><a className="user">{name}</a></td>
     <td><span className="badge">{points}</span></td>
-    <td><Link className="badge" to={{pathname: `/user/${id}`}}>GO</Link></td>
+    <td><Link className="badge more" to={{pathname: `/user/${id}`}}>more</Link></td>
   </tr>
 );
 
