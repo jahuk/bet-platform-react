@@ -18,35 +18,36 @@ const sortBets = (bet1, bet2) => {
 const MatchList = ({results, bets, matchId}) => {
 
   return (
+    <div>
+      <h2>Match bets:</h2>
+      <table className="table match">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Bet</th>
+          <th>Points</th>
+          <th/>
+        </tr>
+        </thead>
+        <tbody>
 
-    <table className="table match">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Bet</th>
-        <th>Points</th>
-        <th/>
-      </tr>
-      </thead>
-      <tbody>
+        {
+          bets.map((bet, i) => {
+            const matchBet = bet.bets[matchId].bet;
+            const matchResult = results[matchId].result;
+            const matchDay = results[matchId].matchday;
+            const points = getMatchPoints(matchResult, matchBet, matchDay);
+            const isLive = results[matchId].status === 'IN_PLAY';
 
-      {
-        bets.map((bet, i) => {
-          const matchBet = bet.bets[matchId].bet;
-          const matchResult = results[matchId].result;
-          const matchDay = results[matchId].matchday;
-          const points = getMatchPoints(matchResult, matchBet, matchDay);
-          const isLive = results[matchId].status === 'IN_PLAY';
+            return (
+              <User key={i} id={++i} name={bet.name} bet={matchBet} points={points} isLive={isLive} />
+            );
+          }).sort(sortBets)
+        }
 
-          return (
-            <User key={i} id={i} name={bet.name} bet={matchBet} points={points} isLive={isLive} />
-          );
-        }).sort(sortBets)
-      }
-
-      </tbody>
-    </table>
-
+        </tbody>
+      </table>
+    </div>
   );
 };
 

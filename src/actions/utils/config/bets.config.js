@@ -22,6 +22,7 @@ export default {
     ]
   },
   SETTINGS: {
+    headers: {cache: 'no-cache'},
     dataType: 'json',
     method: 'GET'
   }
