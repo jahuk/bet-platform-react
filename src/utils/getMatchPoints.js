@@ -6,7 +6,7 @@ const MULTIPLIER_POINTS = 2;
 export default function getMatchPoints(result, bet, matchday) {
   let points = 0;
 
-  if (bet === '-') {
+  if (bet === '-' || result === '') {
     points = 0;
   } else if (bet === result) {
     points = MAX_POINTS;
