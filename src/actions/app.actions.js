@@ -16,7 +16,7 @@ export function getData() {
 
     const data = [];
 
-    const results = fetch(RESULTS.URLS.MOCK.FIXTURES, RESULTS.SETTINGS)
+    const results = fetch(RESULTS.URLS.LIVE.FIXTURES, RESULTS.SETTINGS)
       .then((response) => response.json());
     data.push(results);
 
