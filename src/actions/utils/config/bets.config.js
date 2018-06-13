@@ -17,8 +17,9 @@ export default {
       'wojtekkuc',
       'mateuszo',
       'adamw',
-      'kamilj',
-      'krzysztofg'
+      'krzysztofg',
+      'sandrak',
+      'bartekb'
     ]
   },
   SETTINGS: {
