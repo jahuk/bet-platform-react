@@ -363,7 +363,7 @@
         }
       },
       "date": "2018-06-18T18:00:00Z",
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "matchday": 1,
       "homeTeamName": "Tunisia",
       "awayTeamName": "England",
@@ -394,8 +394,8 @@
       "homeTeamName": "Colombia",
       "awayTeamName": "Japan",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -420,8 +420,8 @@
       "homeTeamName": "Poland",
       "awayTeamName": "Senegal",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -446,8 +446,8 @@
       "homeTeamName": "Russia",
       "awayTeamName": "Egypt",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -472,8 +472,8 @@
       "homeTeamName": "Portugal",
       "awayTeamName": "Morocco",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -498,8 +498,8 @@
       "homeTeamName": "Uruguay",
       "awayTeamName": "Saudi Arabia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -524,8 +524,8 @@
       "homeTeamName": "Iran",
       "awayTeamName": "Spain",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -550,8 +550,8 @@
       "homeTeamName": "Denmark",
       "awayTeamName": "Australia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -576,8 +576,8 @@
       "homeTeamName": "France",
       "awayTeamName": "Peru",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -602,8 +602,8 @@
       "homeTeamName": "Argentina",
       "awayTeamName": "Croatia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -628,8 +628,8 @@
       "homeTeamName": "Brazil",
       "awayTeamName": "Costa Rica",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -654,8 +654,8 @@
       "homeTeamName": "Nigeria",
       "awayTeamName": "Iceland",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -680,8 +680,8 @@
       "homeTeamName": "Serbia",
       "awayTeamName": "Switzerland",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -706,8 +706,8 @@
       "homeTeamName": "Belgium",
       "awayTeamName": "Tunisia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -732,8 +732,8 @@
       "homeTeamName": "Korea Republic",
       "awayTeamName": "Mexico",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -758,8 +758,8 @@
       "homeTeamName": "Germany",
       "awayTeamName": "Sweden",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -784,8 +784,8 @@
       "homeTeamName": "England",
       "awayTeamName": "Panama",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -810,8 +810,8 @@
       "homeTeamName": "Japan",
       "awayTeamName": "Senegal",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -836,8 +836,8 @@
       "homeTeamName": "Poland",
       "awayTeamName": "Colombia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -862,8 +862,8 @@
       "homeTeamName": "Saudi Arabia",
       "awayTeamName": "Egypt",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -888,8 +888,8 @@
       "homeTeamName": "Uruguay",
       "awayTeamName": "Russia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -914,8 +914,8 @@
       "homeTeamName": "Iran",
       "awayTeamName": "Portugal",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -940,8 +940,8 @@
       "homeTeamName": "Spain",
       "awayTeamName": "Morocco",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -966,8 +966,8 @@
       "homeTeamName": "Denmark",
       "awayTeamName": "France",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -992,8 +992,8 @@
       "homeTeamName": "Australia",
       "awayTeamName": "Peru",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1018,8 +1018,8 @@
       "homeTeamName": "Nigeria",
       "awayTeamName": "Argentina",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1044,8 +1044,8 @@
       "homeTeamName": "Iceland",
       "awayTeamName": "Croatia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1070,8 +1070,8 @@
       "homeTeamName": "Mexico",
       "awayTeamName": "Sweden",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1096,8 +1096,8 @@
       "homeTeamName": "Korea Republic",
       "awayTeamName": "Germany",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1122,8 +1122,8 @@
       "homeTeamName": "Serbia",
       "awayTeamName": "Brazil",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1148,8 +1148,8 @@
       "homeTeamName": "Switzerland",
       "awayTeamName": "Costa Rica",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1174,8 +1174,8 @@
       "homeTeamName": "Japan",
       "awayTeamName": "Poland",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1200,8 +1200,8 @@
       "homeTeamName": "Senegal",
       "awayTeamName": "Colombia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1226,8 +1226,8 @@
       "homeTeamName": "Panama",
       "awayTeamName": "Tunisia",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },
@@ -1252,8 +1252,8 @@
       "homeTeamName": "England",
       "awayTeamName": "Belgium",
       "result": {
-        "goalsHomeTeam": null,
-        "goalsAwayTeam": null
+        "goalsHomeTeam": 0,
+        "goalsAwayTeam": 0
       },
       "odds": null
     },

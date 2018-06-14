@@ -1,6 +1,6 @@
 ## Bet Platform React
 
-A simple app to track bet results for UEFA EURO 2016. 
+A simple app to track bet results for WORLD CUP 2018. 
 
 ## Motivation
 
@@ -10,15 +10,15 @@ Learn React, track bet results and have fun.
 
 ### Fixtures
 * app use results from http://api.football-data.org/index,
-* endpoint for UEFA EURO 2016 results: http://api.football-data.org/v1/soccerseasons/424/fixtures,
+* endpoint for WORLD CUP 2018 results: http://api.football-data.org/v1/competitions/467/fixtures,
 * example
 ```json
 "_links": {
   "self": {
-    "href": "http://api.football-data.org/v1/soccerseasons/424/fixtures"
+    "href": "http://api.football-data.org/v1/competitions/467/fixtures"
   },
   "soccerseason": {
-    "href": "http://api.football-data.org/v1/soccerseasons/424"
+    "href": "http://api.football-data.org/v1/competitions/467"
   }
 },
 "count": 51,

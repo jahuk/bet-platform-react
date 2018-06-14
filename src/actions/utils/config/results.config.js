@@ -10,7 +10,7 @@ export default {
     }
   },
   SETTINGS: {
-    headers: {'X-Auth-Token': 'd6d13ff9c73843b8ac45326b4d7b88d9', cache: 'no-cache'},
+    headers: {'X-Auth-Token': 'd6d13ff9c73843b8ac45326b4d7b88d9'},
     dataType: 'json',
     method: 'GET'
   }
