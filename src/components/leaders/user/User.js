@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from 'react-router';
 
 const User = ({id, name, points, isPointsLive, place}) => (
-  <tr>
-    <td>{place}</td>
+  <tr className={`place${place}`}>
+    <td><span className="badge leaders">{place}</span></td>
     <td><a className="user">{name}</a></td>
     <td><span className="badge">{points}</span></td>
     <td>

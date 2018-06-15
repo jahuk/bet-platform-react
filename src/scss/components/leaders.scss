@@ -7,3 +7,26 @@
   height: 150px;
   display: block;
 }
+
+.badge.leaders {
+  background: #ccc;
+}
+
+.place1 .badge.leaders {
+  background: gold;
+  color: #000;
+}
+
+.place2 .badge.leaders {
+  background: silver;
+  color: #000;
+}
+
+.place3 .badge.leaders {
+  background: #cd7f32;
+}
+
+.place1 {
+  background: #8080ff;
+  color: white;
+}

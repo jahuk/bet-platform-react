@@ -113,17 +113,17 @@ ng\:form {
   cursor: pointer;
 }
 
-.users tbody tr:nth-child(1) {
+.users tbody tr.place1 {
   background: #8080ff;
   color: #fff;
 }
 
-.users tbody tr:nth-child(2) {
+.users tbody tr.place2 {
   background: #b3b3ff;
   color: #fff;
 }
 
-.users tbody tr:nth-child(3) {
+.users tbody tr.place3 {
   background: #e6e6ff;
 }
 
@@ -138,8 +138,8 @@ ng\:form {
   color: #555;
 }
 
-.users tbody tr:nth-child(1) .user,
-.users tbody tr:nth-child(2) .user {
+.users tbody tr.place1 .user,
+.users tbody tr.place2 .user {
   color: #fff;
 }
 
