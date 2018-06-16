@@ -1,3 +1,13 @@
+const getResult = (result, status) => {
+  if (result.goalsHomeTeam === null && result.goalsAwayTeam === null && status === 'IN_PLAY') {
+    return '0-0';
+  } else if (result.goalsHomeTeam !== null && result.goalsAwayTeam !== null) {
+    return `${result.goalsHomeTeam}-${result.goalsAwayTeam}`;
+  } else {
+    return '';
+  }
+};
+
 export default function extractResults(results) {
   let extractedResults = [];
 
@@ -7,7 +17,7 @@ export default function extractResults(results) {
       away: result.awayTeamName,
       matchday: result.matchday,
       status: result.status,
-      result: (result.result.goalsHomeTeam) === null ? '' : `${result.result.goalsHomeTeam}-${result.result.goalsAwayTeam}`
+      result: getResult(result.result, result.status)
     });
   }
 
