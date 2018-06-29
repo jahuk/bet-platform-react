@@ -1,6 +1,6 @@
 export default {
   URLS: {
-    LOCATION: 'http://m18.knigawka.com/data/bets/',
+    LOCATION: 'http://m18.knigawka.com/data/bets2/',
     USERS: [
       'jasiekk',
       'adamd',
@@ -13,11 +13,9 @@ export default {
       'lukaszb',
       'mikolajk',
       'jarekb',
-      'szymonn',
+      'krystianp',
       'wojtekkuc',
       'mateuszo',
-      'adamw',
-      'krzysztofg',
       'sandrak',
       'bartekb'
     ]
