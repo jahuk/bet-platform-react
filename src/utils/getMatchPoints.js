@@ -74,7 +74,7 @@ export default function getMatchPoints(result, bet, matchday) {
     }
   }
 
-  if (matchday > 3) {
+  if (matchday > 10) {
     points *= MULTIPLIER_POINTS;
   }
 
